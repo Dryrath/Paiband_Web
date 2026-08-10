@@ -1,0 +1,2 @@
+<?php get_header(); ?>
+<main class="site-main"><section class="page-hero"><div class="wrap"><div class="eyebrow">PaiBand Studio</div><h1><?php the_title(); ?></h1></div></section><section class="paper"><div class="narrow"><div class="legal-content"><?php while(have_posts()): the_post(); the_content(); endwhile; ?></div></div></section></main><?php get_footer(); ?>

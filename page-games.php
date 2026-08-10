@@ -1,0 +1,9 @@
+<?php /* Template Name: Games */ get_header(); ?>
+<main class="site-main">
+<section class="page-hero"><div class="wrap"><div class="eyebrow">PaiBand Studio</div><h1>Our games.</h1><p>Two public projects with completely different tones, connected by a focus on readable player fantasies, tactile systems and strong visual identity.</p></div></section>
+<section class="paper"><div class="wrap"><div class="games-grid">
+<a class="game-card" href="<?php echo esc_url(home_url('/games/restore-your-island/')); ?>"><div class="media"><img src="<?php echo paiband_asset('restore-keyart.jpg'); ?>"></div><div class="game-card-copy"><span class="pill">Released 9 April 2026</span><h3>Restore Your Island</h3><p>A cozy first-person restoration adventure about cleaning a polluted island, reviving habitats and creating a peaceful sanctuary with your loyal dog.</p><div class="tagrow"><span class="tag">Windows</span><span class="tag">macOS on Steam</span><span class="tag">Steam</span><span class="tag">Epic Games Store</span></div></div></a>
+<a class="game-card" href="<?php echo esc_url(home_url('/games/escape-by-spoon/')); ?>"><div class="media"><img src="<?php echo paiband_asset('escape-keyart.jpg'); ?>"></div><div class="game-card-copy"><span class="pill">2027</span><h3>Escape By Spoon</h3><p>A first-person adventure/exploration game mixing survival, dark comedy, chaotic prison cooking and forbidden midnight tunneling.</p><div class="tagrow"><span class="tag">PC</span><span class="tag">Steam</span><span class="tag">Adventure</span><span class="tag">Exploration</span></div></div></a>
+</div></div></section>
+<section><div class="wrap"><div class="callout"><div><h2>Press or creator?</h2><p>Each game page includes a direct button to its current official Drive press kit, and the Press hub collects both in one place.</p></div><a class="btn dark" href="<?php echo esc_url(home_url('/press/')); ?>">Press resources →</a></div></div></section>
+</main><?php get_footer(); ?>

@@ -1,0 +1,39 @@
+PAIBAND TEAM PHOTOS — v3.3.1
+
+The Team page is already wired in this exact order:
+
+01 Arash Negahban — Creative Director and CEO
+   assets/team-01-arash-negahban.jpg
+
+02 Mohammadreza Aboutalebi — Technical Director and CTO
+   assets/team-02-mohammadreza-aboutalebi.jpg
+
+03 Saeed Namdari — Senior Programmer
+   assets/team-03-saeed-namdari.jpg
+
+04 Erfan Jamali — Marketing Manager
+   assets/team-04-erfan-jamali.jpg
+
+05 Siavash Negahban — Composer and Sound Designer
+   assets/team-05-siavash-negahban.jpg
+
+06 Mojataba Zamani — Art Director
+   assets/team-06-mojataba-zamani.jpg
+
+07 Mojtaba Ataeifar — 3D Artist
+   assets/team-07-mojtaba-ataeifar.jpg
+
+08 Mohammad Nikandish — Animator
+   assets/team-08-mohammad-nikandish.jpg
+
+The eight portraits in the ChatGPT message were inline images and did not expose
+downloadable file bytes to the artifact workspace. The template therefore uses
+clean initials as automatic fallbacks until the corresponding JPG exists.
+
+To insert the exact portraits without touching PHP:
+- export/save each supplied photo as JPG,
+- name them exactly as above,
+- upload/overwrite them inside the theme's /assets/ directory.
+The page will automatically switch from initials to the portraits.
+
+Recommended crop: 4:5 portrait, at least 1000px wide.

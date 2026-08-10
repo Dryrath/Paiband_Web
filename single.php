@@ -1,0 +1,2 @@
+<?php get_header(); ?>
+<main class="site-main"><article class="article"><div class="narrow"><?php while(have_posts()): the_post(); ?><div class="eyebrow">PaiBand Studio update</div><h1><?php the_title(); ?></h1><div class="article-meta"><?php echo esc_html(get_the_date()); ?></div><?php if(has_post_thumbnail()) the_post_thumbnail('large'); ?><div class="article-body"><?php the_content(); ?></div><?php endwhile; ?></div></article></main><?php get_footer(); ?>

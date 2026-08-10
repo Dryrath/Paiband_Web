@@ -1,0 +1,34 @@
+# Changelog
+
+## 3.3.3 — Team Roster Update
+
+- Merged the renamed/current Team portrait assets supplied by the studio.
+- Added **Saeed Abbasi — Senior Programmer**.
+- Updated the Team roster from 8 to 9 people.
+- Updated Team order to match the numbered asset filenames.
+- Changed the desktop Team grid to a balanced 3 × 3 layout.
+- Updated GitHub/Cursor documentation and project rules for the new roster.
+
+## 3.3.2 — Repo Ready
+
+- Added full GitHub/Cursor maintenance documentation.
+- Added `.cursor` project rules.
+- Added validation scripts for Bash and PowerShell.
+- Added actual eight team portraits in the requested order.
+- Refactored Team members into one editable PHP array.
+- Added editable social-link settings through WordPress Customizer.
+- Added automatic footer social-link rendering.
+- Kept the v3.3.1 homepage section removal and contrast fixes.
+
+## 3.3.1
+
+- Removed the homepage "What defines PaiBand / one sentence" section.
+- Fixed light-background heading contrast.
+- Fixed game-card text contrast.
+- Added eight-person Team page structure.
+
+## 3.3
+
+- Studio-first v3.x design.
+- Updated game press-kit content and assets.
+- Updated PaiBand brand assets.

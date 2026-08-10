@@ -1,0 +1,2 @@
+<?php /* Template Name: Privacy Policy */ get_header(); ?>
+<main class="site-main"><section class="page-hero"><div class="wrap"><div class="eyebrow">Legal</div><h1>Privacy Policy.</h1><p>Your existing WordPress Privacy Policy content is preserved below. The redesign changes presentation, not the legal text stored in your site.</p></div></section><section class="paper"><div class="narrow"><div class="legal-content"><?php while(have_posts()): the_post(); the_content(); endwhile; ?></div></div></section></main><?php get_footer(); ?>

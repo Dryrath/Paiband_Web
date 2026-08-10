@@ -1,0 +1,72 @@
+---
+description: PaiBand Studio WordPress theme editing rules
+alwaysApply: true
+---
+
+# PaiBand Studio Theme Rules
+
+This repository is a custom WordPress theme.
+
+## Product/design direction
+
+- PaiBand Studio is the primary website identity.
+- TGS has a dedicated page but must not dominate the studio homepage.
+- Preserve the v3.x dark/editorial direction.
+- Primary accent is warm orange/gold.
+- Light paper sections require dark text.
+- Text over game key art requires strong dark overlay + light text.
+- Do not reintroduce the removed "We want a game to be understandable in one sentence" homepage section unless explicitly requested.
+
+## Facts
+
+Do not invent or silently change factual information.
+
+Current baseline:
+- Restore Your Island release: 9 April 2026.
+- Escape By Spoon release year: 2027.
+- TGS booth: SELECTED INDIE 80 area · Booth E-26.
+- Team data is defined in `page-team.php`.
+- Current Team roster has 9 members, including Saeed Abbasi as Senior Programmer.
+- Preserve the explicit Team array order unless the user asks to reorder it.
+
+Press Kit URLs:
+- Restore: https://drive.google.com/drive/folders/1cvdHpmj0IRikvvCCURtEChOYvtuOnShp?usp=drive_link
+- Escape: https://drive.google.com/drive/folders/1JbNNS0LDzA3Q5TTRCQKJAApBtNp8cCVt?usp=drive_link
+
+## Code rules
+
+- Preserve `wp_head()`, `wp_footer()`, and `wp_body_open()`.
+- Escape output using WordPress escaping functions.
+- Use `paiband_asset()` for theme asset URLs.
+- Use `paiband_email()`, `paiband_location()`, `paiband_booth()`, and `paiband_meeting()` instead of duplicating settings.
+- Existing social URLs should be entered through Customizer settings unless code structure itself needs to change.
+- Do not hard-code legal text into templates.
+- News posts belong in WordPress Posts, not PHP files.
+- Keep WordPress template filenames/slugs stable unless the task explicitly requires URL changes.
+- If CSS/JS changes, bump the enqueue version in `functions.php`.
+
+## Editing scope
+
+When asked to change text only:
+- do not redesign
+- do not change class names
+- do not reorder sections
+- do not replace images
+
+When asked to reorder blocks:
+- move complete `<section>...</section>` blocks
+- do not rewrite their contents unless requested
+
+When asked to change Team:
+- edit the `$paiband_team` array in `page-team.php`
+- keep photo filenames under `/assets/`
+
+## Validation
+
+After PHP edits, run:
+
+```bash
+bash scripts/validate-theme.sh
+```
+
+If PHP is unavailable, still inspect matching opening/closing tags and mention that PHP lint could not run.

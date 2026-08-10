@@ -1,0 +1,20 @@
+PAIBAND HEADER / FOOTER FIX — v3.3
+
+If the new page BODY appears but the old HEADER and FOOTER remain, the theme is being overridden.
+
+ELEMENTOR PRO:
+1. WordPress Admin → Elementor → Theme Builder.
+2. Open the old Header.
+3. Display Conditions → remove “Entire Site”, or set the template to Draft.
+4. Repeat for Footer.
+5. Elementor → Tools / Editor → Tools → Clear Files & Data.
+6. Clear every cache layer: WordPress plugin, hosting/server, CDN.
+7. Test in a private/incognito window.
+8. Appearance → Themes: “PaiBand Studio 2026 Studio v3.3” must be Active.
+
+OTHER PLUGINS:
+Also check:
+- Appearance → Elementor Header & Footer Builder
+- Templates → Header Footer
+- any Header/Footer or Theme Builder plugin
+Disable any global template assigned to the entire website.
