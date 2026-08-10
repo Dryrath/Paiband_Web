@@ -70,3 +70,29 @@ bash scripts/validate-theme.sh
 ```
 
 If PHP is unavailable, still inspect matching opening/closing tags and mention that PHP lint could not run.
+
+## AdSense
+
+- Publisher ID: `ca-pub-9956094817641062`.
+- Loader is in `functions.php` via `paiband_homepage_adsense()`.
+- It currently runs only on `is_front_page()`.
+- Do not duplicate the loader in `header.php`.
+- To enable it site-wide, remove the homepage condition instead of adding another script.
+
+
+## Official socials
+
+Current defaults:
+- YouTube: https://www.youtube.com/@Paibandstudio
+- Discord: https://discord.com/invite/GAfHQmZzfk
+- Instagram: https://www.instagram.com/paibandstudio?igsh=MXdkOW40dHl3Mmc2ag==
+- TikTok: https://www.tiktok.com/@paiband
+- LinkedIn: https://www.linkedin.com/company/paiband-studio
+
+Social URLs and icons are centralized in `functions.php`.
+Do not duplicate them throughout templates.
+
+## Support page
+
+The FAQ / "Common questions" section was intentionally removed from `page-support.php`.
+Do not re-add it unless explicitly requested.

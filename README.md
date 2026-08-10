@@ -1080,3 +1080,60 @@ Please preserve these decisions:
 - Do not use dark text directly over dark game artwork.
 - Use the official PaiBand logos already in `/assets/`.
 - Do not invent team roles, release dates, platforms, social accounts, press-kit links, or legal content.
+
+
+# 32. Official social links
+
+The footer currently renders these official PaiBand social links with inline SVG icons:
+
+```text
+YouTube   https://www.youtube.com/@Paibandstudio
+Discord   https://discord.com/invite/GAfHQmZzfk
+Instagram https://www.instagram.com/paibandstudio?igsh=MXdkOW40dHl3Mmc2ag==
+TikTok    https://www.tiktok.com/@paiband
+LinkedIn  https://www.linkedin.com/company/paiband-studio
+```
+
+The default URLs are centralized in:
+
+```text
+functions.php
+```
+
+Search for:
+
+```php
+function paiband_social_links()
+```
+
+The SVG icon markup is centralized in:
+
+```php
+function paiband_social_icon($key)
+```
+
+Do not paste social URLs repeatedly into `footer.php`.
+
+They are also exposed through:
+
+```text
+Appearance → Customize → PaiBand Studio Settings
+```
+
+If a URL must change, updating the Customizer is normally preferred for the live website. For a repository-level default change, update `functions.php`.
+
+
+## Support page
+
+The old **FAQ / Common Questions** section was intentionally removed in v3.3.5.
+
+Current Support flow:
+
+```text
+Support hero
+→ Restore Your Island support card
+→ Escape By Spoon support card
+→ Still need help? contact CTA
+```
+
+Do not restore the FAQ unless explicitly requested.

@@ -1,9 +1,9 @@
 /*
-Theme Name: PaiBand Studio 2026 Studio v3.3.3 Repo Ready
+Theme Name: PaiBand Studio 2026 Studio v3.3.5 Social
 Theme URI: https://paibandstudio.com
 Author: PaiBand Studio
 Description: Full bespoke PaiBand Studio website with game pages, press hub, support, news, legal templates and Tokyo Game Show 2026 experience.
-Version: 3.3.3
+Version: 3.3.5
 Text Domain: paiband
 */
 :root{
@@ -497,4 +497,44 @@ body.motion-ready .tgs-content>*:nth-child(4){animation-delay:.21s}
 }
 @media(max-width:560px){
  .team-grid-members{grid-template-columns:1fr}
+}
+
+
+/* ===== v3.3.5 footer social icons ===== */
+.footer-social-links{
+ gap:10px;
+}
+.footer-social-icon{
+ width:44px;
+ height:44px;
+ min-height:44px!important;
+ padding:0!important;
+ display:grid!important;
+ place-items:center;
+ border-radius:50%!important;
+ background:rgba(255,255,255,.045);
+ color:#e9edf2!important;
+}
+.footer-social-icon svg{
+ width:20px;
+ height:20px;
+ display:block;
+ fill:currentColor;
+}
+.footer-social-icon:hover{
+ color:#111!important;
+ background:var(--orange)!important;
+ border-color:var(--orange)!important;
+ transform:translateY(-3px)!important;
+}
+.screen-reader-text{
+ position:absolute!important;
+ width:1px!important;
+ height:1px!important;
+ padding:0!important;
+ margin:-1px!important;
+ overflow:hidden!important;
+ clip:rect(0,0,0,0)!important;
+ white-space:nowrap!important;
+ border:0!important;
 }

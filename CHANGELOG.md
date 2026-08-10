@@ -1,5 +1,14 @@
 # Changelog
 
+## 3.3.5 — Support & Social Footer
+
+- Removed the Support page FAQ / Common Questions section.
+- Added official YouTube, Discord, Instagram, TikTok and LinkedIn links.
+- Added lightweight inline SVG icons for all footer social links.
+- Centralized official social defaults in `functions.php`.
+- Kept social URLs editable through the WordPress Customizer.
+- Added accessible labels/tooltips to social icon links.
+
 ## 3.3.3 — Team Roster Update
 
 - Merged the renamed/current Team portrait assets supplied by the studio.

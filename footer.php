@@ -19,8 +19,16 @@
     <span class="footer-social-label">Follow PaiBand</span>
     <div class="footer-social-links">
      <?php foreach($social_links as $social): ?>
-      <a href="<?php echo esc_url($social['url']); ?>" target="_blank" rel="noopener noreferrer">
-       <?php echo esc_html($social['label']); ?>
+      <a
+       class="footer-social-icon footer-social-<?php echo esc_attr($social['key']); ?>"
+       href="<?php echo esc_url($social['url']); ?>"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="<?php echo esc_attr($social['label']); ?>"
+       title="<?php echo esc_attr($social['label']); ?>"
+      >
+       <?php echo paiband_social_icon($social['key']); ?>
+       <span class="screen-reader-text"><?php echo esc_html($social['label']); ?></span>
       </a>
      <?php endforeach; ?>
     </div>
