@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.3.6 — X Social Link
+
+- Added X account: `https://x.com/RestoreIsland`.
+- Added X icon to the footer social row.
+- Added X as the default WordPress Customizer social URL.
+- Updated GitHub/Cursor documentation.
+
 ## 3.3.5 — Support & Social Footer
 
 - Removed the Support page FAQ / Common Questions section.

@@ -1091,6 +1091,7 @@ YouTube   https://www.youtube.com/@Paibandstudio
 Discord   https://discord.com/invite/GAfHQmZzfk
 Instagram https://www.instagram.com/paibandstudio?igsh=MXdkOW40dHl3Mmc2ag==
 TikTok    https://www.tiktok.com/@paiband
+X         https://x.com/RestoreIsland
 LinkedIn  https://www.linkedin.com/company/paiband-studio
 ```
 
