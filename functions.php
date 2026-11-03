@@ -21,8 +21,8 @@ add_action('after_setup_theme','paiband_setup');
  * Bump the version when CSS/JS changes so browsers do not keep stale files.
  */
 function paiband_assets(){
- wp_enqueue_style('paiband-style',get_stylesheet_uri(),[], '3.3.6');
- wp_enqueue_script('paiband-site',get_template_directory_uri().'/assets/site.js',[], '3.3.6',true);
+ wp_enqueue_style('paiband-style',get_stylesheet_uri(),[], '3.3.7');
+ wp_enqueue_script('paiband-site',get_template_directory_uri().'/assets/site.js',[], '3.3.7',true);
 }
 add_action('wp_enqueue_scripts','paiband_assets');
 
@@ -183,6 +183,67 @@ function paiband_menu_fallback(){
 }
 
 /**
+ * Mouse Chef: Dig Out page URL.
+ * Prefers the renamed slug, then the legacy escape-by-spoon page.
+ */
+function paiband_mouse_chef_url(){
+ static $url = null;
+ if($url !== null) return $url;
+
+ foreach(['games/mouse-chef-dig-out','mouse-chef-dig-out','games/escape-by-spoon','escape-by-spoon'] as $path){
+  $page = get_page_by_path($path);
+  if($page instanceof WP_Post){
+   $url = get_permalink($page);
+   return $url;
+  }
+ }
+
+ $url = home_url('/games/escape-by-spoon/');
+ return $url;
+}
+
+function paiband_mouse_chef_page($post){
+ return $post instanceof WP_Post && $post->post_type === 'page' && in_array($post->post_name,['escape-by-spoon','mouse-chef-dig-out'],true);
+}
+
+function paiband_mouse_chef_legacy_redirect(){
+ if(is_admin()) return;
+ $request = isset($GLOBALS['wp']->request) ? trim((string)$GLOBALS['wp']->request,'/') : '';
+ if($request !== 'games/escape-by-spoon' && $request !== 'escape-by-spoon') return;
+
+ $new = get_page_by_path('games/mouse-chef-dig-out');
+ if(!$new) $new = get_page_by_path('mouse-chef-dig-out');
+ if($new instanceof WP_Post){
+  wp_safe_redirect(get_permalink($new),301);
+  exit;
+ }
+}
+add_action('template_redirect','paiband_mouse_chef_legacy_redirect');
+
+function paiband_mouse_chef_document_title($parts){
+ if(is_page(['escape-by-spoon','mouse-chef-dig-out']) && isset($parts['title']) && $parts['title'] === 'Escape By Spoon'){
+  $parts['title'] = 'Mouse Chef: Dig Out';
+ }
+ return $parts;
+}
+add_filter('document_title_parts','paiband_mouse_chef_document_title');
+
+function paiband_mouse_chef_the_title($title,$post_id = 0){
+ if(is_admin() || !$post_id || $title !== 'Escape By Spoon') return $title;
+ if(paiband_mouse_chef_page(get_post($post_id))) return 'Mouse Chef: Dig Out';
+ return $title;
+}
+add_filter('the_title','paiband_mouse_chef_the_title',10,2);
+
+function paiband_mouse_chef_menu_title($title,$item){
+ if(!isset($item->object) || $item->object !== 'page') return $title;
+ if(!paiband_mouse_chef_page(get_post($item->object_id))) return $title;
+ if(trim(wp_strip_all_tags($title)) === 'Escape By Spoon') return 'Mouse Chef: Dig Out';
+ return $title;
+}
+add_filter('nav_menu_item_title','paiband_mouse_chef_menu_title',10,2);
+
+/**
  * Elementor compatibility.
  * Elementor Theme Builder can still override the theme header/footer when
  * a global Header/Footer template is assigned to "Entire Site".
@@ -197,7 +258,7 @@ add_action('elementor/theme/register_locations','paiband_register_elementor_loca
 function paiband_elementor_override_notice(){
  if(!current_user_can('manage_options')) return;
  if(defined('ELEMENTOR_PRO_VERSION')){
-  echo '<div class="notice notice-info is-dismissible"><p><strong>PaiBand Studio v3.3.6:</strong> Elementor Pro Theme Builder can override this theme’s header and footer. If the old header/footer still appears, go to <strong>Elementor → Theme Builder</strong>, remove “Entire Site” display conditions from the old Header/Footer or set them to Draft, then clear Elementor Files &amp; Data and all site/CDN caches.</p></div>';
+  echo '<div class="notice notice-info is-dismissible"><p><strong>PaiBand Studio v3.3.7:</strong> Elementor Pro Theme Builder can override this theme’s header and footer. If the old header/footer still appears, go to <strong>Elementor → Theme Builder</strong>, remove “Entire Site” display conditions from the old Header/Footer or set them to Draft, then clear Elementor Files &amp; Data and all site/CDN caches.</p></div>';
  }
 }
 add_action('admin_notices','paiband_elementor_override_notice');

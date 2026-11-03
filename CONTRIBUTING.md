@@ -42,7 +42,7 @@ Then manually check the affected page on desktop and mobile.
 Prefer clear messages:
 
 ```text
-Update Escape By Spoon press copy
+Update Mouse Chef: Dig Out press copy
 Add studio LinkedIn footer link
 Fix mobile Team grid spacing
 Move homepage gallery below Games

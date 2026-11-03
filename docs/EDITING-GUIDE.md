@@ -10,7 +10,7 @@ Find the matching PHP template:
 Homepage                     front-page.php
 Games                        page-games.php
 Restore Your Island          page-restore-your-island.php
-Escape By Spoon              page-escape-by-spoon.php
+Mouse Chef: Dig Out          page-mouse-chef-dig-out.php
 About                        page-about.php
 Team                         page-team.php
 Press                        page-press.php

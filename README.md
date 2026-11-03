@@ -4,7 +4,7 @@ Official custom WordPress theme for **PaiBand Studio**.
 
 This repository is intended to make the website easy to maintain with **GitHub + Cursor** while keeping WordPress as the CMS for news posts and legal-page content.
 
-Current theme version: **v3.3.3 Repo Ready**
+Current theme version: **v3.3.7**
 
 ---
 
@@ -78,7 +78,7 @@ Important files:
 | Homepage | `front-page.php` |
 | Games overview | `page-games.php` |
 | Restore Your Island | `page-restore-your-island.php` |
-| Escape By Spoon | `page-escape-by-spoon.php` |
+| Mouse Chef: Dig Out | `page-mouse-chef-dig-out.php` |
 | About | `page-about.php` |
 | Team | `page-team.php` |
 | Press | `page-press.php` |
@@ -297,7 +297,7 @@ The dedicated game pages are:
 
 ```text
 page-restore-your-island.php
-page-escape-by-spoon.php
+page-mouse-chef-dig-out.php
 ```
 
 Typical image code:
@@ -329,7 +329,7 @@ assets/restore-03.jpg
 assets/restore-04.jpg
 
 assets/escape-keyart.jpg
-assets/escape-logo.png
+assets/mouse-chef-logo.png
 assets/escape-01.jpg
 assets/escape-02.jpg
 assets/escape-03.jpg
@@ -765,7 +765,7 @@ The current official Press Kit links should remain:
 https://drive.google.com/drive/folders/1cvdHpmj0IRikvvCCURtEChOYvtuOnShp?usp=drive_link
 ```
 
-## Escape By Spoon
+## Mouse Chef: Dig Out
 
 ```text
 https://drive.google.com/drive/folders/1JbNNS0LDzA3Q5TTRCQKJAApBtNp8cCVt?usp=drive_link
@@ -775,9 +775,11 @@ They are used on:
 
 ```text
 page-restore-your-island.php
-page-escape-by-spoon.php
+page-mouse-chef-dig-out.php
 page-press.php
 ```
+
+`page-escape-by-spoon.php` still loads that same template while the WordPress page slug is `escape-by-spoon`.
 
 If a press-kit URL changes, search the repository for the old URL and replace every intended occurrence.
 
@@ -795,7 +797,7 @@ Developer: PaiBand Studio
 Platforms: Windows and macOS on Steam
 ```
 
-### Escape By Spoon
+### Mouse Chef: Dig Out
 
 ```text
 Release year: 2027
@@ -811,7 +813,7 @@ Search the repository for:
 2027
 9 April 2026
 Restore Your Island
-Escape By Spoon
+Mouse Chef: Dig Out
 ```
 
 ---
@@ -936,7 +938,7 @@ Also test manually:
 - `/`
 - `/games/`
 - `/games/restore-your-island/`
-- `/games/escape-by-spoon/`
+- `/games/mouse-chef-dig-out/`
 - `/about/`
 - `/team/`
 - `/news/`
@@ -1073,7 +1075,7 @@ Please preserve these decisions:
 
 - PaiBand Studio is the website's main focus.
 - TGS is important but is not the identity of the whole website.
-- Restore Your Island and Escape By Spoon can have very different aesthetics.
+- Restore Your Island and Mouse Chef: Dig Out can have very different aesthetics.
 - The overall studio site remains dark/editorial with cream and orange accents.
 - Keep strong contrast.
 - Do not use white text on cream/white backgrounds.
@@ -1133,7 +1135,7 @@ Current Support flow:
 ```text
 Support hero
 → Restore Your Island support card
-→ Escape By Spoon support card
+→ Mouse Chef: Dig Out support card
 → Still need help? contact CTA
 ```
 

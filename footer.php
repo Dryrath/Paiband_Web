@@ -9,7 +9,7 @@
     <p><?php echo esc_html(paiband_location()); ?><br><a href="mailto:<?php echo antispambot(paiband_email()); ?>"><?php echo antispambot(paiband_email()); ?></a></p>
    </div>
    <div><h4>Studio</h4><a href="<?php echo esc_url(home_url('/about/')); ?>">About</a><a href="<?php echo esc_url(home_url('/team/')); ?>">Team</a><a href="<?php echo esc_url(home_url('/news/')); ?>">News</a><a href="<?php echo esc_url(home_url('/contact/')); ?>">Contact</a></div>
-   <div><h4>Games</h4><a href="<?php echo esc_url(home_url('/games/restore-your-island/')); ?>">Restore Your Island</a><a href="<?php echo esc_url(home_url('/games/escape-by-spoon/')); ?>">Escape By Spoon</a><a href="<?php echo esc_url(home_url('/games/')); ?>">All games</a><a href="<?php echo esc_url(home_url('/press/')); ?>">Press kits</a></div>
+   <div><h4>Games</h4><a href="<?php echo esc_url(home_url('/games/restore-your-island/')); ?>">Restore Your Island</a><a href="<?php echo esc_url(paiband_mouse_chef_url()); ?>">Mouse Chef: Dig Out</a><a href="<?php echo esc_url(home_url('/games/')); ?>">All games</a><a href="<?php echo esc_url(home_url('/press/')); ?>">Press kits</a></div>
    <div><h4>Help & Legal</h4><a href="<?php echo esc_url(home_url('/support/')); ?>">Support</a><a href="<?php echo esc_url(home_url('/privacy-policy/')); ?>">Privacy Policy</a><a href="<?php echo esc_url(home_url('/terms-of-use/')); ?>">Terms of Use</a><a href="<?php echo esc_url(home_url('/cookie-policy/')); ?>">Cookie Policy</a><a href="<?php echo esc_url(home_url('/sitemap/')); ?>">Sitemap</a></div>
   </div>
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.3.7 — Mouse Chef: Dig Out
+
+- Renamed Escape By Spoon to Mouse Chef: Dig Out across the theme.
+- Replaced the game logo with `assets/mouse-chef-logo.png`.
+- Added `page-mouse-chef-dig-out.php` and kept `page-escape-by-spoon.php` so the current WordPress slug still loads the page.
+- Public links follow the renamed page slug when it exists, and the old URL redirects after that rename.
+- Key art and gameplay screenshots are unchanged until new images are supplied.
+
 ## 3.3.6 — X Social Link
 
 - Added X account: `https://x.com/RestoreIsland`.

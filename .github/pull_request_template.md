@@ -7,7 +7,7 @@ Describe the change.
 - [ ] Homepage
 - [ ] Games
 - [ ] Restore Your Island
-- [ ] Escape By Spoon
+- [ ] Mouse Chef: Dig Out
 - [ ] About
 - [ ] Team
 - [ ] News

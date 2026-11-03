@@ -1,9 +1,9 @@
 /*
-Theme Name: PaiBand Studio 2026 Studio v3.3.6 Social + X
+Theme Name: PaiBand Studio 2026 Studio v3.3.7 Mouse Chef
 Theme URI: https://paibandstudio.com
 Author: PaiBand Studio
 Description: Full bespoke PaiBand Studio website with game pages, press hub, support, news, legal templates and Tokyo Game Show 2026 experience.
-Version: 3.3.6
+Version: 3.3.7
 Text Domain: paiband
 */
 :root{
@@ -252,7 +252,7 @@ body.motion-ready .tgs-content>*:nth-child(4){animation-delay:.21s}
 .feature-grid-five .pillar:nth-child(1),.feature-grid-five .pillar:nth-child(2),.feature-grid-five .pillar:nth-child(3){grid-column:span 2}
 .feature-grid-five .pillar:nth-child(4),.feature-grid-five .pillar:nth-child(5){grid-column:span 3}
 .escape-detail .detail-box:after{background:linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.91) 88%)}
-.escape-logo{filter:drop-shadow(0 4px 1px rgba(0,0,0,.45))}
+.escape-logo{filter:drop-shadow(0 4px 1px rgba(0,0,0,.45));width:min(640px,100%);max-height:230px}
 .press-visual-card{position:relative;min-height:560px;overflow:hidden;padding:0!important}
 .press-visual-card>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .press-visual-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.92) 88%)}

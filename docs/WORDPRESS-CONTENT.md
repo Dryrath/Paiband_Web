@@ -44,7 +44,7 @@ Recommended pages/slugs:
 Home
 /games/
 /games/restore-your-island/
-/games/escape-by-spoon/
+/games/mouse-chef-dig-out/   (rename the existing escape-by-spoon page to this slug)
 /about/
 /team/
 /news/

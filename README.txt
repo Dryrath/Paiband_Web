@@ -8,13 +8,13 @@ THIS VERSION IS BASED ON THE v3.x DIRECTION
 - Uses the NEW uploaded full PaiBand Studio logo in the homepage/about/footer.
 - Uses current press-kit assets pulled from both Drive folders.
 - Restore Your Island copy follows the current press kit: release 9 April 2026.
-- Escape By Spoon copy follows the UPDATED English press kit: release year 2027.
+- Mouse Chef: Dig Out copy follows the UPDATED English press kit: release year 2027.
 
 PRESS KIT LINKS BUILT INTO THE GAME PAGES
 Restore Your Island:
 https://drive.google.com/drive/folders/1cvdHpmj0IRikvvCCURtEChOYvtuOnShp?usp=drive_link
 
-Escape By Spoon:
+Mouse Chef: Dig Out:
 https://drive.google.com/drive/folders/1JbNNS0LDzA3Q5TTRCQKJAApBtNp8cCVt?usp=drive_link
 
 Both links also appear on /press/.
@@ -33,7 +33,7 @@ PAGES / SLUGS
 Home
 Games /games/
 Restore Your Island /games/restore-your-island/
-Escape By Spoon /games/escape-by-spoon/
+Mouse Chef: Dig Out /games/mouse-chef-dig-out/
 About /about/
 Team /team/
 News /news/
