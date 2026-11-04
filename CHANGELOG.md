@@ -1,5 +1,21 @@
 # Changelog
 
+## 3.3.10 — Homepage Mouse Chef poster crop
+
+- Shifted the homepage Mouse Chef poster so the tunnel, mouse, and dog stay in the middle of the card.
+
+## 3.3.9 — Linktree icon
+
+- Replaced the Linktree footer icon with the rounded starburst mark.
+- Moved Linktree to the right end of the footer social row.
+
+## 3.3.8 — Socials, Mouse Chef art, trailers
+
+- Updated official social links and added Linktree.
+- Replaced Mouse Chef screenshots, banner poster, and key art.
+- Added a trailer section to both game pages. Restore Your Island uses the current YouTube trailer. Mouse Chef is reserved until its trailer link is ready.
+- Archived Tokyo Game Show 2026 out of the main navigation. The page remains at `/tgs/`, linked from the footer and sitemap.
+
 ## 3.3.7 — Mouse Chef: Dig Out
 
 - Renamed Escape By Spoon to Mouse Chef: Dig Out across the theme.

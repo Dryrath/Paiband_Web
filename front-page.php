@@ -18,7 +18,7 @@
   </div>
   <div class="hero-art">
    <div class="poster a"><img src="<?php echo paiband_asset('restore-keyart.jpg'); ?>" alt="Restore Your Island key art"><span class="poster-badge">Restore Your Island · Available now</span></div>
-   <div class="poster b"><img src="<?php echo paiband_asset('escape-keyart.jpg'); ?>" alt="Mouse Chef: Dig Out key art"><span class="poster-badge">Mouse Chef: Dig Out · 2027</span></div>
+   <div class="poster b"><img src="<?php echo paiband_asset('mouse-chef-poster.jpg'); ?>" alt="Mouse Chef: Dig Out banner"><span class="poster-badge">Mouse Chef: Dig Out · 2027</span></div>
    <div class="hero-studio-seal"><img src="<?php echo paiband_asset('paiband-studio-logo.png'); ?>" alt="PaiBand Studio logo"></div>
   </div>
  </div>
@@ -29,7 +29,7 @@
   <div class="section-head"><div><div class="eyebrow">Our games</div><h2>Two worlds.<br>Two very different ideas.</h2></div><p>Our projects are allowed to look and feel completely different. What connects them is a memorable premise and gameplay built around satisfying, understandable actions.</p></div>
   <div class="games-grid">
    <a class="game-card" href="<?php echo esc_url(home_url('/games/restore-your-island/')); ?>"><div class="media"><img src="<?php echo paiband_asset('restore-keyart.jpg'); ?>" alt="Restore Your Island"></div><div class="game-card-copy"><span class="pill">Available now</span><h3>Restore Your Island</h3><p>A cozy first-person restoration adventure where you clean a polluted island, revive nature, help wildlife return and build a peaceful sanctuary with your loyal dog.</p><div class="tagrow"><span class="tag">Cozy</span><span class="tag">Cleanup</span><span class="tag">Life Sim</span><span class="tag">Relaxing Adventure</span></div></div></a>
-   <a class="game-card" href="<?php echo esc_url(paiband_mouse_chef_url()); ?>"><div class="media"><img src="<?php echo paiband_asset('escape-keyart.jpg'); ?>" alt="Mouse Chef: Dig Out"></div><div class="game-card-copy"><span class="pill">Coming 2027</span><h3>Mouse Chef: Dig Out</h3><p>A first-person adventure blending survival, exploration and dark comedy inside a 1930s rubber-hose prison where you cook by day and dig toward freedom by night.</p><div class="tagrow"><span class="tag">First-person</span><span class="tag">Adventure</span><span class="tag">Exploration</span><span class="tag">Dark Comedy</span></div></div></a>
+   <a class="game-card" href="<?php echo esc_url(paiband_mouse_chef_url()); ?>"><div class="media"><img src="<?php echo paiband_asset('mouse-chef-key-02.jpg'); ?>" alt="Mouse Chef: Dig Out"></div><div class="game-card-copy"><span class="pill">Coming 2027</span><h3>Mouse Chef: Dig Out</h3><p>A first-person adventure blending survival, exploration and dark comedy inside a 1930s rubber-hose prison where you cook by day and dig toward freedom by night.</p><div class="tagrow"><span class="tag">First-person</span><span class="tag">Adventure</span><span class="tag">Exploration</span><span class="tag">Dark Comedy</span></div></div></a>
   </div>
  </div>
 </section>
@@ -39,9 +39,9 @@
   <div class="section-head"><div><div class="eyebrow">From our games</div><h2>Real worlds.<br>Real gameplay.</h2></div><p>The site stays anchored in current press-kit imagery instead of generic studio decoration.</p></div>
   <div class="mosaic">
    <figure><img src="<?php echo paiband_asset('restore-03.jpg'); ?>" alt="Restore Your Island gameplay"><span class="caption">Restore Your Island</span></figure>
-   <figure><img src="<?php echo paiband_asset('escape-02.jpg'); ?>" alt="Mouse Chef: Dig Out gameplay"><span class="caption">Mouse Chef: Dig Out</span></figure>
+   <figure><img src="<?php echo paiband_asset('mouse-chef-03.jpg'); ?>" alt="Mouse Chef: Dig Out gameplay"><span class="caption">Mouse Chef: Dig Out</span></figure>
    <figure><img src="<?php echo paiband_asset('restore-02.jpg'); ?>" alt="Restore Your Island gameplay"><span class="caption">Restore Your Island</span></figure>
-   <figure><img src="<?php echo paiband_asset('escape-04.jpg'); ?>" alt="Mouse Chef: Dig Out gameplay"><span class="caption">Mouse Chef: Dig Out</span></figure>
+   <figure><img src="<?php echo paiband_asset('mouse-chef-05.jpg'); ?>" alt="Mouse Chef: Dig Out gameplay"><span class="caption">Mouse Chef: Dig Out</span></figure>
    <figure><img src="<?php echo paiband_asset('restore-04.jpg'); ?>" alt="Restore Your Island gameplay"><span class="caption">Restore Your Island</span></figure>
   </div>
  </div>

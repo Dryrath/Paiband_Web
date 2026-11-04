@@ -4,7 +4,7 @@ Official custom WordPress theme for **PaiBand Studio**.
 
 This repository is intended to make the website easy to maintain with **GitHub + Cursor** while keeping WordPress as the CMS for news posts and legal-page content.
 
-Current theme version: **v3.3.7**
+Current theme version: **v3.3.8**
 
 ---
 
@@ -327,13 +327,18 @@ assets/restore-01.jpg
 assets/restore-02.jpg
 assets/restore-03.jpg
 assets/restore-04.jpg
+assets/restore-05.jpg
+assets/restore-06.jpg
 
-assets/escape-keyart.jpg
+assets/mouse-chef-poster.jpg
+assets/mouse-chef-key-01.png
+assets/mouse-chef-key-02.jpg
 assets/mouse-chef-logo.png
-assets/escape-01.jpg
-assets/escape-02.jpg
-assets/escape-03.jpg
-assets/escape-04.jpg
+assets/mouse-chef-01.jpg
+assets/mouse-chef-02.jpg
+assets/mouse-chef-03.jpg
+assets/mouse-chef-04.jpg
+assets/mouse-chef-05.jpg
 
 assets/paiband-flower.png
 assets/paiband-studio-logo.png
@@ -559,6 +564,7 @@ Instagram URL
 YouTube URL
 TikTok URL
 Discord invite URL
+Linktree URL
 ```
 
 Leave a field blank to hide that network.
@@ -1091,9 +1097,10 @@ The footer currently renders these official PaiBand social links with inline SVG
 ```text
 YouTube   https://www.youtube.com/@Paibandstudio
 Discord   https://discord.com/invite/GAfHQmZzfk
-Instagram https://www.instagram.com/paibandstudio?igsh=MXdkOW40dHl3Mmc2ag==
-TikTok    https://www.tiktok.com/@paiband
-X         https://x.com/RestoreIsland
+Instagram https://www.instagram.com/paibandgames/
+TikTok    https://www.tiktok.com/@paibandgames
+X         https://x.com/PaibandGames
+Linktree  https://linktr.ee/PaiBandstudio
 LinkedIn  https://www.linkedin.com/company/paiband-studio
 ```
 

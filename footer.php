@@ -35,7 +35,7 @@
    </div>
   <?php endif; ?>
 
-  <div class="legal-row"><span>© <?php echo date('Y'); ?> PaiBand Studio. All rights reserved.</span><span>Independent game studio.</span></div>
+  <div class="legal-row"><span>© <?php echo date('Y'); ?> PaiBand Studio. All rights reserved.</span><span>Independent game studio. <a class="archive-link" href="<?php echo esc_url(home_url('/tgs/')); ?>">TGS 2026 archive</a></span></div>
  </div>
 </footer>
 <?php wp_footer(); ?>

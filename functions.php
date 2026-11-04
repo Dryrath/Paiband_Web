@@ -21,8 +21,8 @@ add_action('after_setup_theme','paiband_setup');
  * Bump the version when CSS/JS changes so browsers do not keep stale files.
  */
 function paiband_assets(){
- wp_enqueue_style('paiband-style',get_stylesheet_uri(),[], '3.3.7');
- wp_enqueue_script('paiband-site',get_template_directory_uri().'/assets/site.js',[], '3.3.7',true);
+ wp_enqueue_style('paiband-style',get_stylesheet_uri(),[], '3.3.10');
+ wp_enqueue_script('paiband-site',get_template_directory_uri().'/assets/site.js',[], '3.3.10',true);
 }
 add_action('wp_enqueue_scripts','paiband_assets');
 
@@ -56,11 +56,12 @@ function paiband_customize($wp_customize){
  $url_settings = [
   'paiband_meeting_url' => ['TGS meeting URL','mailto:contact@paibandstudio.com?subject=TGS%202026%20Meeting'],
   'paiband_social_linkedin' => ['LinkedIn URL','https://www.linkedin.com/company/paiband-studio'],
-  'paiband_social_x' => ['X / Twitter URL','https://x.com/RestoreIsland'],
-  'paiband_social_instagram' => ['Instagram URL','https://www.instagram.com/paibandstudio?igsh=MXdkOW40dHl3Mmc2ag=='],
+  'paiband_social_x' => ['X / Twitter URL','https://x.com/PaibandGames'],
+  'paiband_social_instagram' => ['Instagram URL','https://www.instagram.com/paibandgames/'],
   'paiband_social_youtube' => ['YouTube URL','https://www.youtube.com/@Paibandstudio'],
-  'paiband_social_tiktok' => ['TikTok URL','https://www.tiktok.com/@paiband'],
+  'paiband_social_tiktok' => ['TikTok URL','https://www.tiktok.com/@paibandgames'],
   'paiband_social_discord' => ['Discord invite URL','https://discord.com/invite/GAfHQmZzfk'],
+  'paiband_social_linktree' => ['Linktree URL','https://linktr.ee/PaiBandstudio'],
  ];
 
  foreach($url_settings as $key=>$data){
@@ -116,19 +117,23 @@ function paiband_social_links(){
   ],
   'instagram' => [
    'label' => 'Instagram',
-   'default' => 'https://www.instagram.com/paibandstudio?igsh=MXdkOW40dHl3Mmc2ag==',
+   'default' => 'https://www.instagram.com/paibandgames/',
   ],
   'tiktok' => [
    'label' => 'TikTok',
-   'default' => 'https://www.tiktok.com/@paiband',
+   'default' => 'https://www.tiktok.com/@paibandgames',
   ],
   'x' => [
    'label' => 'X',
-   'default' => 'https://x.com/RestoreIsland',
+   'default' => 'https://x.com/PaibandGames',
   ],
   'linkedin' => [
    'label' => 'LinkedIn',
    'default' => 'https://www.linkedin.com/company/paiband-studio',
+  ],
+  'linktree' => [
+   'label' => 'Linktree',
+   'default' => 'https://linktr.ee/PaiBandstudio',
   ],
  ];
 
@@ -159,6 +164,7 @@ function paiband_social_icon($key){
   'instagram' => '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.3 2h9.4A5.3 5.3 0 0 1 22 7.3v9.4a5.3 5.3 0 0 1-5.3 5.3H7.3A5.3 5.3 0 0 1 2 16.7V7.3A5.3 5.3 0 0 1 7.3 2Zm-.2 2A3.1 3.1 0 0 0 4 7.1v9.8A3.1 3.1 0 0 0 7.1 20h9.8a3.1 3.1 0 0 0 3.1-3.1V7.1A3.1 3.1 0 0 0 16.9 4H7.1Zm10.3 1.5a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>',
   'tiktok' => '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 2h3.1c.2 1.4 1 2.7 2.1 3.6A6.7 6.7 0 0 0 23 7v3a9.6 9.6 0 0 1-5.7-1.9v7.2A6.7 6.7 0 1 1 11.5 8v3.1a3.7 3.7 0 1 0 2.7 3.6V2Z"/></svg>',
   'x' => '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.2 2h3.7l-8.1 9.3L23.3 22h-7.5l-5.9-7.7L3.2 22H-.5l8.7-10L-.9 2h7.7l5.3 7 6.1-7Zm-1.3 18.1H19L5.7 3.8H3.5l13.4 16.3Z"/></svg>',
+  'linktree' => '<svg viewBox="0 0 24 24" aria-hidden="true"><g fill="currentColor"><rect x="10.85" y="2.05" width="2.3" height="11.15" rx="1.15"/><rect x="10.85" y="2.05" width="2.3" height="11.15" rx="1.15" transform="rotate(45 12 12)"/><rect x="10.85" y="2.05" width="2.3" height="11.15" rx="1.15" transform="rotate(90 12 12)"/><rect x="10.85" y="2.05" width="2.3" height="11.15" rx="1.15" transform="rotate(135 12 12)"/><rect x="10.85" y="2.05" width="2.3" height="11.15" rx="1.15" transform="rotate(225 12 12)"/><rect x="10.85" y="2.05" width="2.3" height="11.15" rx="1.15" transform="rotate(270 12 12)"/><rect x="10.85" y="2.05" width="2.3" height="11.15" rx="1.15" transform="rotate(315 12 12)"/><rect x="10.85" y="15.15" width="2.3" height="6.75" rx="1.15"/></g></svg>',
   'linkedin' => '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.8 3.4a2.4 2.4 0 1 1 0 4.8 2.4 2.4 0 0 1 0-4.8ZM2.8 9.7h4v11.5h-4V9.7Zm6.5 0h3.8v1.6h.1c.5-1 1.8-2.1 3.8-2.1 4.1 0 4.8 2.7 4.8 6.2v5.8h-4v-5.1c0-1.2 0-3-1.9-3s-2.2 1.4-2.2 2.9v5.2h-4V9.7Z"/></svg>',
  ];
  return isset($icons[$key]) ? $icons[$key] : '';
@@ -179,7 +185,6 @@ function paiband_menu_fallback(){
  echo '<a href="'.esc_url(home_url('/press/')).'">Press</a>';
  echo '<a href="'.esc_url(home_url('/support/')).'">Support</a>';
  echo '<a href="'.esc_url(home_url('/contact/')).'">Contact</a>';
- echo '<a href="'.esc_url(home_url('/tgs/')).'">TGS 2026</a>';
 }
 
 /**
@@ -244,6 +249,68 @@ function paiband_mouse_chef_menu_title($title,$item){
 add_filter('nav_menu_item_title','paiband_mouse_chef_menu_title',10,2);
 
 /**
+ * Official social URLs.
+ * Updates saved Customizer values only when they are still a previous official URL.
+ */
+function paiband_sync_official_links(){
+ if(get_option('paiband_social_sync') === '3.3.8') return;
+ $updates = [
+  'paiband_social_x' => ['https://x.com/PaibandGames', ['https://x.com/RestoreIsland','']],
+  'paiband_social_instagram' => ['https://www.instagram.com/paibandgames/', ['https://www.instagram.com/paibandstudio?igsh=MXdkOW40dHl3Mmc2ag==','https://www.instagram.com/paibandstudio','https://www.instagram.com/paibandstudio/','']],
+  'paiband_social_tiktok' => ['https://www.tiktok.com/@paibandgames', ['https://www.tiktok.com/@paiband','']],
+  'paiband_social_youtube' => ['https://www.youtube.com/@Paibandstudio', ['']],
+  'paiband_social_discord' => ['https://discord.com/invite/GAfHQmZzfk', ['']],
+  'paiband_social_linktree' => ['https://linktr.ee/PaiBandstudio', ['']],
+ ];
+ foreach($updates as $key=>$data){
+  $current = get_theme_mod($key, false);
+  if($current === false || in_array((string)$current, $data[1], true)) set_theme_mod($key, $data[0]);
+ }
+ update_option('paiband_social_sync', '3.3.8', false);
+}
+add_action('after_setup_theme','paiband_sync_official_links',20);
+
+/**
+ * Keep the archived TGS page out of the primary navigation.
+ */
+function paiband_hide_archived_tgs_menu($items, $args){
+ if(!isset($args->theme_location) || $args->theme_location !== 'primary') return $items;
+ $visible = [];
+ foreach($items as $item){
+  $path = isset($item->url) ? (string)parse_url($item->url, PHP_URL_PATH) : '';
+  $path = trim($path, '/');
+  if($path === 'tgs' || substr($path, -4) === '/tgs') continue;
+  $visible[] = $item;
+ }
+ return $visible;
+}
+add_filter('wp_nav_menu_objects','paiband_hide_archived_tgs_menu',10,2);
+
+/**
+ * Game-page trailer. Pass an empty URL to reserve the space.
+ */
+function paiband_youtube_id($url){
+ $url = trim((string)$url);
+ if($url === '') return '';
+ if(preg_match('~(?:youtu\.be/|youtube\.com/(?:watch\?v=|embed/|shorts/))([A-Za-z0-9_-]{11})~', $url, $matches)) return $matches[1];
+ if(preg_match('~^[A-Za-z0-9_-]{11}$~', $url)) return $url;
+ return '';
+}
+
+function paiband_trailer($url, $label){
+ $id = paiband_youtube_id($url);
+ echo '<section class="paper game-trailer" id="trailer"><div class="wrap">';
+ echo '<div class="section-head"><div><div class="eyebrow">Trailer</div><h2>'.esc_html($label).'</h2></div></div>';
+ echo '<div class="trailer-frame">';
+ if($id !== ''){
+  echo '<iframe src="'.esc_url('https://www.youtube-nocookie.com/embed/'.$id).'" title="'.esc_attr($label).'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>';
+ }else{
+  echo '<div class="trailer-pending"><div><div class="eyebrow">Coming soon</div><p>Trailer coming soon.</p></div></div>';
+ }
+ echo '</div></div></section>';
+}
+
+/**
  * Elementor compatibility.
  * Elementor Theme Builder can still override the theme header/footer when
  * a global Header/Footer template is assigned to "Entire Site".
@@ -258,7 +325,7 @@ add_action('elementor/theme/register_locations','paiband_register_elementor_loca
 function paiband_elementor_override_notice(){
  if(!current_user_can('manage_options')) return;
  if(defined('ELEMENTOR_PRO_VERSION')){
-  echo '<div class="notice notice-info is-dismissible"><p><strong>PaiBand Studio v3.3.7:</strong> Elementor Pro Theme Builder can override this theme’s header and footer. If the old header/footer still appears, go to <strong>Elementor → Theme Builder</strong>, remove “Entire Site” display conditions from the old Header/Footer or set them to Draft, then clear Elementor Files &amp; Data and all site/CDN caches.</p></div>';
+  echo '<div class="notice notice-info is-dismissible"><p><strong>PaiBand Studio v3.3.10:</strong> Elementor Pro Theme Builder can override this theme’s header and footer. If the old header/footer still appears, go to <strong>Elementor → Theme Builder</strong>, remove “Entire Site” display conditions from the old Header/Footer or set them to Draft, then clear Elementor Files &amp; Data and all site/CDN caches.</p></div>';
  }
 }
 add_action('admin_notices','paiband_elementor_override_notice');

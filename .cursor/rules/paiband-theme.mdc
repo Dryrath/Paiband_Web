@@ -11,6 +11,7 @@ This repository is a custom WordPress theme.
 
 - PaiBand Studio is the primary website identity.
 - TGS has a dedicated page but must not dominate the studio homepage.
+- TGS 2026 is archived. Do not put it back in the primary navigation. Keep `/tgs/` reachable from the footer archive link and the sitemap.
 - Preserve the v3.x dark/editorial direction.
 - Primary accent is warm orange/gold.
 - Light paper sections require dark text.
@@ -24,6 +25,8 @@ Do not invent or silently change factual information.
 Current baseline:
 - Restore Your Island release: 9 April 2026.
 - Mouse Chef: Dig Out (formerly Escape By Spoon) release year: 2027.
+- Restore Your Island trailer: https://www.youtube.com/watch?v=5_gB00itPeM
+- Mouse Chef: Dig Out trailer: not available yet. Leave the trailer space empty until a link is provided.
 - TGS booth: SELECTED INDIE 80 area · Booth E-26.
 - Team data is defined in `page-team.php`.
 - Current Team roster has 9 members, including Saeed Abbasi as Senior Programmer.
@@ -85,9 +88,10 @@ If PHP is unavailable, still inspect matching opening/closing tags and mention t
 Current defaults:
 - YouTube: https://www.youtube.com/@Paibandstudio
 - Discord: https://discord.com/invite/GAfHQmZzfk
-- Instagram: https://www.instagram.com/paibandstudio?igsh=MXdkOW40dHl3Mmc2ag==
-- TikTok: https://www.tiktok.com/@paiband
-- X: https://x.com/RestoreIsland
+- Instagram: https://www.instagram.com/paibandgames/
+- TikTok: https://www.tiktok.com/@paibandgames
+- X: https://x.com/PaibandGames
+- Linktree: https://linktr.ee/PaiBandstudio
 - LinkedIn: https://www.linkedin.com/company/paiband-studio
 
 Social URLs and icons are centralized in `functions.php`.
