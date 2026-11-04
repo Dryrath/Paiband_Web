@@ -21,8 +21,8 @@ add_action('after_setup_theme','paiband_setup');
  * Bump the version when CSS/JS changes so browsers do not keep stale files.
  */
 function paiband_assets(){
- wp_enqueue_style('paiband-style',get_stylesheet_uri(),[], '3.3.10');
- wp_enqueue_script('paiband-site',get_template_directory_uri().'/assets/site.js',[], '3.3.10',true);
+ wp_enqueue_style('paiband-style',get_stylesheet_uri(),[], '3.3.12');
+ wp_enqueue_script('paiband-site',get_template_directory_uri().'/assets/site.js',[], '3.3.12',true);
 }
 add_action('wp_enqueue_scripts','paiband_assets');
 
@@ -325,7 +325,7 @@ add_action('elementor/theme/register_locations','paiband_register_elementor_loca
 function paiband_elementor_override_notice(){
  if(!current_user_can('manage_options')) return;
  if(defined('ELEMENTOR_PRO_VERSION')){
-  echo '<div class="notice notice-info is-dismissible"><p><strong>PaiBand Studio v3.3.10:</strong> Elementor Pro Theme Builder can override this theme’s header and footer. If the old header/footer still appears, go to <strong>Elementor → Theme Builder</strong>, remove “Entire Site” display conditions from the old Header/Footer or set them to Draft, then clear Elementor Files &amp; Data and all site/CDN caches.</p></div>';
+  echo '<div class="notice notice-info is-dismissible"><p><strong>PaiBand Studio v3.3.12:</strong> Elementor Pro Theme Builder can override this theme’s header and footer. If the old header/footer still appears, go to <strong>Elementor → Theme Builder</strong>, remove “Entire Site” display conditions from the old Header/Footer or set them to Draft, then clear Elementor Files &amp; Data and all site/CDN caches.</p></div>';
  }
 }
 add_action('admin_notices','paiband_elementor_override_notice');

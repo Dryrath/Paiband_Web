@@ -331,6 +331,7 @@ assets/restore-05.jpg
 assets/restore-06.jpg
 
 assets/mouse-chef-poster.jpg
+assets/mouse-chef-poster-02.jpg
 assets/mouse-chef-key-01.png
 assets/mouse-chef-key-02.jpg
 assets/mouse-chef-logo.png

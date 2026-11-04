@@ -17,7 +17,7 @@
    </div>
   </div>
   <div class="hero-art">
-   <div class="poster a"><img src="<?php echo paiband_asset('restore-keyart.jpg'); ?>" alt="Restore Your Island key art"><span class="poster-badge">Restore Your Island · Available now</span></div>
+   <div class="poster a"><img src="<?php echo paiband_asset('restore-05.jpg'); ?>" alt="Restore Your Island beach shelter"><span class="poster-badge">Restore Your Island · Available now</span></div>
    <div class="poster b"><img src="<?php echo paiband_asset('mouse-chef-poster.jpg'); ?>" alt="Mouse Chef: Dig Out banner"><span class="poster-badge">Mouse Chef: Dig Out · 2027</span></div>
    <div class="hero-studio-seal"><img src="<?php echo paiband_asset('paiband-studio-logo.png'); ?>" alt="PaiBand Studio logo"></div>
   </div>

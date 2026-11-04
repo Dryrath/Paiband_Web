@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.3.12 — Press card poster
+
+- Replaced the off-center Mouse Chef press card image with the centered dog poster.
+
+## 3.3.11 — Homepage Restore poster
+
+- Replaced the homepage Restore Your Island poster with the beach shelter screenshot and framed the hut in the card.
+
 ## 3.3.10 — Homepage Mouse Chef poster crop
 
 - Shifted the homepage Mouse Chef poster so the tunnel, mouse, and dog stay in the middle of the card.
